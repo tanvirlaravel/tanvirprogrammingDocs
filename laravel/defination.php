@@ -6,9 +6,9 @@
       
     <div class="row">
            <div class="col-3">
-            <a href="#h" class="p-2 display-4 d-inline-block bg-dark text-warning ">H</a>
-            <a title="Scope State" href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning  ">S</a>
-            <a href="#v" class="p-2 display-4 d-inline-block bg-dark text-warning ">V</a>
+            <a href="#h" class="p-2 display-4 d-inline-block bg-dark text-warning">H</a>
+            <a title="Scope" href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">S</a>
+            <a href="#v" class="p-2 display-4 d-inline-block bg-dark text-warning">V</a>
            </div> 
            <div class="col-9">
            <! 
@@ -18,25 +18,24 @@
             -->
             <section class="Hoisting">
             <h1 id="h">H</h1> <a href="#variable">Hoisting</a>
-           
+            <hr><hr>
             <h3 id="Hoisting">Hoisting</h3>
            
 
 
             
-            <a href="#h" class="p-1 d-inline-block bg-dark text-warning  float-right">H Top</a>
+            <a href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">Top</a>
             </section>
-            <hr>
-            <hr>
             
            <! 
            ================
                 Scope 
             ================ 
             -->
-            <h1 id="s" class="text-danger">S</h1> <a href="#scope">Scope</a> <a href="#state">State</a>
-            <section class="scope">            
-            <h2 id="scope" class="text-success">Scope</h2>
+            <section class="scope">
+            <h1 id="s">S</h1> <a href="#scope">Scope</a>
+            <hr><hr>
+            <h3 id="scope">Scope</h3>
            
             <p>Scope determines the accessibility (visibility) of variables.</p>
             <p>The scope is the current context of execution in which values and expressions are "visible" or can be referenced. If a variable or expression is not in the current scope, it will not be available for use. Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.</p>
@@ -92,32 +91,24 @@
                 <li>JavaScript does not allow block level scope inside { } brackets.</li>
                 
             </ol>
-           
-            </section>
-            <section id="state">
-           
-            <h2 class="text-success">State</h2>
-            <p>A state is a JavaScript object that stores the dynamic data of a component and allows it to follow changes between renderings. It's a combination of all those different states. For instance, if the user is not authenticated, is the modal open.</p>
-            <p>The state of an object in object-oriented programming is the sum of the object's original values plus any changes made to them. A process, transaction, or setting's current or last-known status or condition. Keeping track of the process is known as "maintaining state" or "managing state."</p>
+
+            <a href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">Top</a>
             </section>
 
-            <a href="#s" class="p-1 d-inline-block bg-dark text-warning  float-right">S Top</a>
             <! 
             ================
                 Variable 
             ================ 
             -->
-            <hr>
-            <hr>
             <section class="variable">
             <h1 id="v">V</h1> <a href="#variable">Variable</a>
-           
+            <hr><hr>
             <h3 id="variable">Variable</h3>
             <p>A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence.</p>
 
 
             
-            <a href="#v" class="p-1 d-inline-block bg-dark text-warning  float-right">V Top</a>
+            <a href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">Top</a>
             </section>
            
 
