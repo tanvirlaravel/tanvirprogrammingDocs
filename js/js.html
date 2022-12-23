@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="note">
+        <h5>Original content</h5>
+        <p>
+            inside paragraph
+            <span>inside span</span>
+            inside paragraph
+        </p>
+    </div>
+    <div class="alert">
+        <h5>Output</h5>
+        <div id="output"></div>
+    </div>
+
+
+    <script>
+        var matches = document.querySelectorAll("div.note, div.alert");
+        console.log(matches)
+
+    </script>
+</body>
+
+</html>

@@ -1,16 +1,40 @@
 <?php include_once '../inc/header.php'; ?>
 <div class="container">
     
-    <?php include_once 'js.nav.php'; ?>
+    <?php include_once 'nav.php'; ?>
 
       
     <div class="row">
            <div class="col-3">
+            <a href="#f" class="p-2 display-4 d-inline-block bg-dark text-warning">F</a>
             <a href="#h" class="p-2 display-4 d-inline-block bg-dark text-warning">H</a>
             <a title="Scope" href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">S</a>
             <a href="#v" class="p-2 display-4 d-inline-block bg-dark text-warning">V</a>
            </div> 
            <div class="col-9">
+            <! 
+            ================
+            Facade 
+            ================ 
+            -->
+            <section class="Facade">
+            <h1 id="f">F</h1> <a href="#facade">Facade</a>
+            <hr><hr>
+            <h3 id="Hoisting">Facade</h3>
+            <p>In Laravel, a facade is a class that provides a <strong><span class="text-danger">static interface</span></strong> to a service or functionality in the application's underlying container. Facades are used to provide a simple, intuitive interface for interacting with complex systems in the application, such as the database, cache, or logging systems.</p>
+            <pre class="bg-dark text-white p-2">
+                use Illuminate\Support\<span class="text-danger">Facades</span>\DB;
+
+                DB::table('users')->get();
+            </pre>
+           
+
+
+            
+            <a href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">Top</a>
+            </section>
+
+
            <! 
             ================
             Hoisting 
