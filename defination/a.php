@@ -2,7 +2,7 @@
 <div class="container">
     
     
-    <h1>A</h1>
+    <h1><a href="<?= $rool_url ?>defination/defination.php">Defination</a>/A</h1>     
       
     <div class="row">
            <div class="col-4">
@@ -11,31 +11,86 @@
             </ul>
            </div> 
            <div class="col-8">
-           <h3>Defination</h3>
-           <p>Laravel events are a way to simple observer pattern implementation of the <span class="text-danger">activity of your application</span>.</p>
-           <p>Like you want to monitor, when your application user login from which IP you can execute some function using events. If you have an e-commerce site, sometimes you need to notify or send an SMS to your vendor whenever a new order is placed. So, we can call events as action takers of our application. </p>
-           <p>a single event can have multiple listeners that do not depend on each other</p>
-           <p>An event class is essentially a data container which holds the information related to the event.</p>
-           <hr>
+
+           <!-- 
+                ##########################################################################  
+            -->
+           <div class="hide show">
+           <h3>Anonymous function (php)</h3>
+            <p> In PHP, anonymous functions, also known as closures, are functions without a name. They can be stored as variables, passed as arguments to other functions, and returned as values from functions.</p>
+            <pre>
+            $plusTwo = function($x) {
+                return $x + 2;
+            };
+
+            echo $plusTwo(3); // prints 5
+
+            </pre>
+            <p>Anonymous functions can also be created using the use keyword to bind variables from the parent scope to the anonymous function:</p>
+            <pre>
+            $plusNum = 2;
+
+            $plusTwo = function($x) use ($plusNum) {
+                return $x + $plusNum;
+            };
+
+            echo $plusTwo(3); // prints 5
+
+            </pre>
+            <p>Anonymous functions are often used in PHP as callbacks, for example with array functions such as array_map and array_filter.</p>
+            <pre>
+            $numbers = [1, 2, 3, 4, 5];
+
+            $filtered = array_filter($numbers, function($x) {
+                return $x % 2 == 0;
+            });
+
+            print_r($filtered); // prints [2, 4]
+            </pre>
+            <hr>
+            <hr>
+           </div>
+             <!-- 
+                ##########################################################################  
+            -->
+
+             <!-- 
+                ##########################################################################  
+            -->
+           <div class="hide show">
+           <h3>Anonymous function (js)</h3>
+            <p> In JavaScript, an anonymous function is a function without a name. It can be stored as a variable, passed as an argument to other functions, and returned as a value from functions.</p>
+        
+            <pre>
+            const plusTwo = function(x) {
+                return x + 2;
+            };
+
+            console.log(plusTwo(3)); // prints 5
+            </pre>
+            <p>Anonymous functions can also be created using the arrow function syntax, which is a shorter way to define a function:</p>
+            <pre>
+            const plusTwo = (x) => x + 2;
+
+            console.log(plusTwo(3)); // prints 5
+            </pre>
+            <p>Anonymous functions are often used in JavaScript as callbacks, for example with array methods such as map and filter.</p>            
+            <hr>
+            <hr>
+           </div>
+             <!-- ###########################################################       -->
+             <h3>Aggregate functions</h3>
+             <p>In database management, aggregate functions are functions that perform a calculation on a set of values and return a single result. Aggregate functions are often used to perform statistical analysis or to generate summary information about a dataset.</p>
+             <pre>
+             AVG(): Calculates the average of a set of values.
+            COUNT(): Counts the number of rows in a table or the number of non-NULL values in a set of values.
+            MAX(): Finds the maximum value in a set of values.
+            MIN(): Finds the minimum value in a set of values.
+            SUM(): Calculates the sum of a set of values.
+             </pre>
 
            
-           <h3>What is a Listener in Laravel</h3>
-           <p>In the Laravel, the listener is <span class="text-danger">a class</span> that performs event instructions</p>
-           <p>For example, you want to send a one-time welcome mail to your client when they register on your site. In this case, we can set an event that calls a listener to send the mail.</p>
-           <hr>
-           
-
-           <h3>Event and Listener Binding in Laravel</h3>
-           <p>Before we started, we needed to know where we had to register for the event. It’s called <span class="text-danger">EventServiceProvider</span>, where we register our event and listeners. It’s located in the <strong>app\Providers</strong> directory.</p>
-           <hr>
-
-           <h3>Generating Events & Listeners</h3>
-           <pre class="p-2 text-white bg-dark">
-           php artisan event:generate
-           </pre>
-
-           <h3>Queued Event Listeners</h3>
-           <a href="https://laravel.com/docs/9.x/events#queued-event-listeners" target="_blank">Doc</a>
+        
           
            </div> 
     

@@ -1,86 +1,14 @@
-<?php include_once '../inc/header.php'; ?>
-<div class="container">
-    
-    <?php include_once 'js.nav.php'; ?>
 
-      
-    <div class="row">
-           <div class="col-3">
-            <a href="#h" class="p-2 display-4 d-inline-block bg-dark text-warning">H</a>
-            <a title="Scope" href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">S</a>
-            <a href="#v" class="p-2 display-4 d-inline-block bg-dark text-warning">V</a>
-           </div> 
-           <div class="col-9">
-           <! 
-            ================
-            Hoisting 
-            ================ 
-            -->
-            <section class="Hoisting">
-            <h1 id="h">H</h1> <a href="#variable">Hoisting</a>
-            <hr><hr>
-            <h3 id="Hoisting">Hoisting</h3>
+            
 
-             <h2>Anonymous function</h2>
-                <p> a closure in PHP is a function that can be created without a specified name - an anonymous function</p>
-                <hr>
+                
 
-                <h2>Closures</h2>
-                <p>Closures are PHP’s version of anonymous functions. A closure is a function that you can pass around as an object, assign to a variable, pass as a parameter to other functions and methods, or even serialize.</p>
-                <p>a closure in PHP is a function that can be created without a specified name - an anonymous function</p>
-                <hr>
+                
 
-                <h2>Collection</h2>
-                <p>A collection is a laravel class that uses arrays internally and adds many features to them. You can create a collection simply by using collect method like this</p>
-                <hr>
-
-                <h2>Dependency Injection</h2>
-                <p>Dependency injection is a procedure where one object supplies the dependencies of another object.</p>
-                <p>The dependencies can be changed at run time as well as compile time</p>
-
-            <ul>
-                <li><b>Modular:</b> The Dependency Injection helps create completely self-sufficient classes or modules</li>
-                <li><b>Testable:</b>It helps write testable code easily eg unit tests for example</li>
-                <li><b>Maintainable:</b> Since each class becomes modular, it becomes easier to manage it</li>
-            </ul>
-            <hr>
+               
 
 
-            <h2>Declarative programming</h2>
-            <pre class="px-3">
-
-            Here's an example.
-
-            In CSS (used to style HTML pages), if you want an image element to be 100 pixels high and 100 
-            pixels wide, you simply "declare" that that's what you want as follows:
-
-            #myImageId {
-            height: 100px;
-            width: 100px;
-            }
-
-            You can consider CSS a declarative "style sheet" language.
-
-            The browser engine that reads and interprets this CSS is free to make the image appear
-            this tall and this wide however it wants. Different browser engines (e.g., the engine 
-            for IE, the engine for Chrome) will implement this task differently.
-
-            Their unique implementations are, of course, NOT written in a declarative language but in
-            a procedural one like Assembly, C, C++, Java, JavaScript, or Python. That code is a bunch
-            of steps to be carried out step by step (and might include function calls). It might do
-            things like interpolate pixel values, and render on the screen.
-            </pre>
-            <hr>
-
-            <h2>Driver (Software)</h2>
-            <p>A software driver is <code>a type of software program</code> that controls a hardware device. On any computer, smartphone, tablet, different hardware components that are part of the computer and attached devices need to communicate with each other for a computer to function and work.</p>
-
-            <p>suppose an application needs to read some data from a device. The application calls a function implemented by the operating system, and the operating system calls a function implemented by the driver. The driver, which was written by the same company that designed and manufactured the device, knows how to communicate with the device hardware to get the data. After the driver gets the data from the device, it returns the data to the operating system, which returns it to the application.</p>
-            <img src="/img/definations/whatisadriver01.png">
-
-            <h5>Software drivers</h5>
-            <p>suppose you need to write a tool that has access to core operating system data structures, which can be accessed only by code running in kernel mode. You can do that by splitting the tool into two components. The first component runs in user mode and presents the user interface. The second component runs in kernel mode and has access to the core operating system data. The component that runs in user mode is called an application, and the component that runs in kernel mode is called a software driver. A software driver is not associated with a hardware device.</p>
-            <img src="{{  asset('img/definations/whatisadriver03.png') }}">
+           
            
             <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Components of HTTP-based systems</h4>
                 <p>HTTP is a client-server protocol: requests are sent by one entity, the user-agent (or a proxy on behalf of it). Most of the time the user-agent is a Web browser, but it can be anything, for example a robot that crawls the Web to populate and maintain a search engine index.</p>
@@ -166,30 +94,7 @@ Content-type: image/jpg
             <hr>
 
 
-            <h2>Declarative programming</h2>
-            <pre class="px-3">
-
-            Here's an example.
-
-            In CSS (used to style HTML pages), if you want an image element to be 100 pixels high and 100 
-            pixels wide, you simply "declare" that that's what you want as follows:
-
-            #myImageId {
-            height: 100px;
-            width: 100px;
-            }
-
-            You can consider CSS a declarative "style sheet" language.
-
-            The browser engine that reads and interprets this CSS is free to make the image appear
-            this tall and this wide however it wants. Different browser engines (e.g., the engine 
-            for IE, the engine for Chrome) will implement this task differently.
-
-            Their unique implementations are, of course, NOT written in a declarative language but in
-            a procedural one like Assembly, C, C++, Java, JavaScript, or Python. That code is a bunch
-            of steps to be carried out step by step (and might include function calls). It might do
-            things like interpolate pixel values, and render on the screen.
-            </pre>
+            
                
             <h2>HTTP METHODS</h2>
                
@@ -305,33 +210,9 @@ Content-type: image/jpg
                </ol>
                <p>If HTTP pipelining is activated, several requests can be sent without waiting for the first response to be fully received. HTTP pipelining has proven difficult to implement in existing networks, where old pieces of software coexist with modern versions. HTTP pipelining has been superseded in HTTP/2 with more robust multiplexing requests within a frame.</p>  
 
-               <h2>interface</h2>
-
-                <ul>
-                    <li>a point where two systems, subjects, organizations, etc. meet and interact.</li>
-                    <li>interact with (another system, person, etc.). </li>
-                    <li>
-                        <h6>COMPUTING</h6>
-                        <p>a device or program enabling a user to communicate with a computer. "a graphical user interface"</p>
-                        <p>a device or program for connecting two items of hardware or software so that they can be operated jointly or communicate with each other. "an application program interface"</p>
-                        <p>connect with (another computer or piece of equipment) by an interface.</p>
-                    </li>
-                </ul>
-                <hr>
                
-                <h2>Memory</h2>
-                <p>A memory is just like a human brain. It is used to store data and instructions. Computer memory is the storage space in the computer, where data is to be processed and instructions required for processing are stored. The memory is divided into large number of small parts called cells. Each location or cell has a unique address, which varies from zero to memory size minus one. For example, if the computer has 64k words, then this memory unit has 64 * 1024 = 65536 memory locations. The address of these locations varies from 0 to 65535.</p>
-
-                <p>In computing, memory refers to a device that is used to store information for immediate use in a computer or related computer hardware device.[1] It typically refers to semiconductor memory, specifically metal–oxide–semiconductor (MOS) memory,[2][3] where data is stored within MOS memory cells on a silicon integrated circuit chip.</p>
-                <p>Most semiconductor memory is organized into memory cells or bistable flip-flops, each storing one bit (0 or 1).</p>
-
-                <p>Memory is primarily of three types −</p>
-                <ul>
-                    <li>Cache Memory</li>
-                    <li>Primary Memory/Main Memory</li>
-                    <li>Secondary Memory</li>
-                </ul>
-                <hr>
+               
+                
 
                 
                 <h2>Message body</h2>
@@ -351,14 +232,7 @@ Content-type: image/jpg
 
                 </ul> 
             <hr>
-            <h2>Run vs Compile times</h2>
-                <ul>
-                    <li>PHP makes two passes (by default) anytime it runs a file.</li>
-                    <li>Pass #1 parses the file and builds what is called operational(or machine) code. This is the raw binary format your computer will actually run and it is not human readable. In other languages (like C++, etc) this is called compiling. You can cache this step using various systems like Opcache, which saves you the overhead of compiling this every <time class=""></time></li>
-                    <li>Syntax errors come from this portion of the execution.</li>
-                    <li>Pass #2 executes the operational code from Pass #1. This is what is commonly called "run time", because your computer is actually executing the instructions.</li>
-                    <li>Run-time errors (like exhausting memory, abnormal termination, etc) come from this level. These are considerably less common than syntax errors, however.</li>
-                </ul>
+           
                 <hr>
 
                 <h2>Request line</h2>
@@ -384,29 +258,7 @@ Content-type: image/jpg
                 </ul>
                 <hr>
 
-                <h2>service providers</h2>
-                <p>Service providers in laravel application is the central place where application is bootstrapped. That is, laravel’s core services and our application’s services, classes and their dependencies are injected in service container through providers. </p>
-
-                <p>When your app runs, it requires additional code, often packaged as "services" (See the "app/Services" folder) to get things done.</p>
-                <p>
-
-                    "Service Providers" are Laravel's way of packaging and managing the code needed to load these additional "services" (or running other code) at app bootup.</p>
-                <p>
-
-                    They are run in 2 phases - "register", and "boot"; each one defined by a same-named method on the provider.</p>
-                <p>
-
-                    The list of service providers for your app is listed in config/app.php, and this is how you specify which ones will run, and in what order (you don't need to run all of the service providers in the services folder, you can just keep them there, doing nothing).</p>
-
-                <p>
-
-                    When Laravel boots, it looks at the list, loads the right Providers, which in turn have their register() and boot() methods called at the right time.</p>
-                <p>
-
-                    Then the rest of the app boots, and subsequent tasks which need access to any "services" loaded by the "service providers", have them.</p>
-
-                <p>Basically, features are wrapped up in ‘services’ that can be added or removed from the application, by adding or removing the corresponding service provider class. So things like routing, mail, etc. are services, and their functionality added to the Laravel framework via their service providers.</p>
-                <p>If you open the config/app.php file included with Laravel, you will see a providers array. These are all of the service provider classes that will be loaded for your application</p>
+               
 
                 <h2>User agent</h2>
                 <p>The user-agent is any tool that acts on the behalf of the user. This role is primarily performed by the Web browser</p>

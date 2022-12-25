@@ -12,3 +12,7 @@ h3El.forEach((h_3) => {
 });
 
 sidebarLinks.innerHTML = ul_li;
+
+document.querySelectorAll("span").forEach(element => {
+  element.classList.add("text-danger")
+});

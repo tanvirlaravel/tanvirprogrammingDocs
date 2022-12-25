@@ -26,7 +26,7 @@
         </a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="Eloquent_Getting_Started.php">Getting Started</a>
-          <a class="dropdown-item" href="#">Relationships</a>         
+          <a class="dropdown-item" href="Relationships.php">Relationships</a>         
           <a class="dropdown-item" href="#">Collections</a>
           <a class="dropdown-item" href="#">Mutators & Casting</a>
           <a class="dropdown-item" href="#">API Resources</a>

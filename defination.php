@@ -1,40 +1,4 @@
-<?php include_once '../inc/header.php'; ?>
-<div class="container">
-    
-    <?php include_once 'js.nav.php'; ?>
-
-      
-    <div class="row">
-           <div class="col-3">
-            <a href="#h" class="p-2 display-4 d-inline-block bg-dark text-warning">H</a>
-            <a title="Scope" href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">S</a>
-            <a href="#v" class="p-2 display-4 d-inline-block bg-dark text-warning">V</a>
-           </div> 
-           <div class="col-9">
-           <! 
-            ================
-            Hoisting 
-            ================ 
-            -->
-            <section class="Hoisting">
-            <h1 id="h">H</h1> <a href="#variable">Hoisting</a>
-            <hr><hr>
-            <h3 id="Hoisting">Hoisting</h3>
-
-            <h2>Aggregate functions - MySQL</h2>
-                <p>MySQL aggregate functions retrieve a single value after performing a calculation on a set of values.</p>
-                <p>In general, aggregate functions ignore null values.</p>
-                <strong>AVG()</strong> /
-                <strong>COUNT()</strong> /
-                <strong>COUNT(DISTINCT)</strong> /
-                <strong>MAX()</strong>
-           
-
-
-            
-            <a href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">Top</a>
-            </section>
-            
+       
            <! 
            ================
                 Scope 
@@ -100,33 +64,3 @@
                 
             </ol>
 
-            <a href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">Top</a>
-            </section>
-
-            <! 
-            ================
-                Variable 
-            ================ 
-            -->
-            <section class="variable">
-            <h1 id="v">V</h1> <a href="#variable">Variable</a>
-            <hr><hr>
-            <h3 id="variable">Variable</h3>
-            <p>A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence.</p>
-
-
-            
-            <a href="#s" class="p-2 display-4 d-inline-block bg-dark text-warning">Top</a>
-            </section>
-           
-
-
-
-
-           </div>     
-    </div>
-</div>
-
-
-
-<?php include_once '../inc/footer.php'; ?>

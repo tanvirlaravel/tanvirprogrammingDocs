@@ -8,9 +8,9 @@
             <div class="col-4">
                  <h3><a href="arrow-functions.php"> Arrow functions</a></h3>
                  <h3><a href="">Array extensions</a></h3>
-                 <h3><a href="">const</a></h3>
+                 <h3><a href="const.php">const</a></h3>
                  <h3><a href=""> Classes</a></h3>
-                 <h3><a href=""> Default function parameters</a></h3>
+                 <h3><a href="Default-function-parameters.php"> Default function parameters</a></h3>
                  <h3><a href="">Destructuring Array</a></h3>
                  <h3><a href="">Destructuring Object</a></h3>
                  <h3><a href="">for…of </a></h3>
