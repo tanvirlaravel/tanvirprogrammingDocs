@@ -7,15 +7,95 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="ml-auto navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">es5</a>
+    
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Fundamentals
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href=".php">asda</a>
+        </div>
       </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          es5
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Getting-started.php">Getting started</a>          
+          <a class="dropdown-item" href="Operators.php">Operators</a> 
+          <a class="dropdown-item" href="Iterators-Generators.php">Iterators & Generators</a>
+          <a class="dropdown-item" href="Modules.php">Modules</a>
+          <a class="dropdown-item" href="Symbol.php">Symbol</a>
+          <a class="dropdown-item" href="Collections.php">Collections</a>
+          <a class="dropdown-item" href="Error-handling.php">Error handling</a>
+          <a class="dropdown-item" href="var-let-const.php">var, let, and const</a>
+          <a class="dropdown-item" href="Proxy-Reflection.php">Proxy & Reflection</a>
+          <a class="dropdown-item" href="JavaScript-Runtime.php">JavaScript Runtime</a>
+          <a class="dropdown-item" href="Primitive-Wrapper-Types.php">Primitive Wrapper Types</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Control flow Statements
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href=".php">Getting</a>
+        </div>
+      </li>
+
       <li class="nav-item">
         <a class="nav-link" href="<?= $rool_url;?>js/es6/es6.php">es6</a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">BOM</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Functions
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Getting-started.php">Getting started</a>          
+        
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Objects & Prototypes
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Getting-started.php">Getting started</a>          
+        
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Classes
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Getting-started.php">Getting started</a>          
+         
+        </div>
+      </li>
+     
+    </ul>
+  
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="ml-auto navbar-nav">
+   
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Promises & Async/Await
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Getting-started.php">Getting started</a>          
+          
+        </div>
       </li>
 
       <li class="nav-item">
@@ -40,9 +120,6 @@
      
      
     </ul>
-    <!-- <form class="my-2 form-inline my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="my-2 btn btn-outline-success my-sm-0" type="submit">Search</button>
-    </form> -->
+  
   </div>
 </nav>

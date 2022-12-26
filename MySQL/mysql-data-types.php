@@ -181,6 +181,41 @@
               <li>Decimal is more accurate than Float and Double.</li>
            </ul>
 
+           <hr>
+           <hr>
+
+           <h3>Date</h3>
+           <p>In MySQL, the DATE data type is used to store date values in the form of 'YYYY-MM-DD'. The DATE data type stores the year, month, and day values as a single value, and it does not include a time component.</p>
+           <pre>
+       CREATE TABLE events (
+              id INT PRIMARY KEY,
+              name VARCHAR(255),
+              date DATE
+       );
+
+       INSERT INTO events (id, name, date) VALUES (1, 'Event 1', '2022-12-25');
+
+           </pre>
+           <p>You can use the DATE data type in MySQL to store date values and perform various date-related operations, such as <code>comparing</code> dates, <code>calculating the difference</code>  between two dates, and <code>extracting</code> the <code>year, month, or day</code> from a date value.</p>
+           <hr>
+           <hr>
+
+           <h3>
+           datetime
+           </h3>
+           <p>In MySQL, the DATETIME data type is used to store date and time values in the form of 'YYYY-MM-DD HH:MM:SS'. The DATETIME data type stores the year, month, day, hour, minute, and second values as a single value, and it includes both a date and a time component.</p>
+           <pre>
+              CREATE TABLE events (
+                     id INT PRIMARY KEY,
+                     name VARCHAR(255),
+                     datetime DATETIME
+              );
+
+              INSERT INTO events (id, name, datetime) VALUES (1, 'Event 1', '2022-12-25 13:30:00');
+
+           </pre>
+           <p>You can use the DATETIME data type in MySQL to store date and time values and perform various date and time-related operations, such as comparing dates and times, calculating the difference between two dates and times, and extracting the year, month, day, hour, minute, or second from a date and time value.</p>
+
            
           
            </div> 

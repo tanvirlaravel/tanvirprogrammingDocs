@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="<?= $rool_url ?>">Home</a>
-  <h1 class="mt-3 text-center text-info">Database</h1>
+  <h1 class="mt-3 text-center text-info">MySql</h1>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -12,7 +12,7 @@
       </li> 
 
       <li class="nav-item active">
-        <a class="nav-link" href="mysql-data-types.php">mysql data types</a>
+        <a class="nav-link" href="mysql-data-types.php">data types</a>
       </li> 
      
 

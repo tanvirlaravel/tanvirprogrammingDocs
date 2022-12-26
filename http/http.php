@@ -1,75 +1,58 @@
-@extends('inc.layout')
-
-@section('content')
-
-
-<h1 class="my-4 text-info text-center display-3">Overview</h1>
-<div class="row">
-    <div class="col">
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#div1" role="tab" aria-controls="home" aria-selected="true">HTTP protocol</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#HTTP_requests" role="tab" aria-controls="home" aria-selected="true">HTTP requests</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#HTTP_responses" role="tab" aria-controls="home" aria-selected="true">HTTP responses</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#div2" role="tab" aria-controls="profile" aria-selected="false">Components of HTTP</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#div3" role="tab" aria-controls="contact" aria-selected="false">Client: the user-agent</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#div4" role="tab" aria-controls="contact" aria-selected="false">The Web server</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#div5" role="tab" aria-controls="contact" aria-selected="false">Proxies</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#div6" role="tab" aria-controls="contact" aria-selected="false">Basic aspects of HTTP</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#div7" role="tab" aria-controls="contact" aria-selected="false">What can be controlled by HTTP</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#div8" role="tab" aria-controls="contact" aria-selected="false">HTTP flow</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#div9" role="tab" aria-controls="contact" aria-selected="false">HTTP Messages</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#div10" role="tab" aria-controls="contact" aria-selected="false">APIs based on HTTP</a>
-  </li>
-
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#HTM_forms" role="tab" aria-controls="contact" aria-selected="false">HTML forms</a>
-  </li>
-
-  
-  
-  
-</ul>
-<div class="tab-content" id="myTabContent">
- 
-  <div class="tab-pane fade show active" id="div1" role="tabpanel" aria-labelledby="home-tab">
-  <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">The HTTP protocol</h4>
-       <p>A protocol standardizes communication over the internet. The Hypertext Transfer Protocol (HTTP) is used to transfer resources (e.g., HTML files, audio files, images, etc.) between a client and a server. A client is a machine that initiates the communication, and a server is a machine that needs to be contacted. HTTP runs over TCP.</p>
+<?php include_once '../inc/header.php'; ?>
+<div class="container">
+    
+    <?php include_once 'nav.php'; ?>
+   
       
-        <img src="img/Fetching_a_page.png" width="700" alt="">
-        <p>Clients and servers communicate by exchanging individual messages (as opposed to a stream of data). The messages sent by the client, usually a Web browser, are called requests and the messages sent by the server as an answer are called responses.</p>
+    <div class="row">
+           <div class="col-4">
+            <ul id="sidebar_links">
+                
+            </ul>
+           </div> 
+           <div class="col-8">
+           <h1 class="text-danger">HTTP</h1>
+         
+       <h3>The HTTP protocol</h3>
+
+       <div>
+       <p>A protocol standardizes communication over the internet.</p>
+
+        <p> The Hypertext Transfer Protocol (HTTP) is used to transfer resources (e.g., HTML files, audio files, images, etc.) between a client and a server. A client is a machine that initiates the communication, and a server is a machine that needs to be contacted. HTTP runs over TCP.</p>
+
+        <p>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP follows a classical <code>client-server model</code>, with a client opening a connection to make a request, then waiting until it receives a response. HTTP is a <code>stateless</code> protocol, meaning that the server does not keep any data (state) between two requests.</p>
+
+        <p>HTTP (Hypertext Transfer Protocol) is a protocol for sending and receiving data on the World Wide Web. It is the foundation of data communication on the Internet, and is used to transmit data between a server and a client.</p> 
+        <hr>
+        <hr> 
+       </div>    
+   
+       
+
+        <h3>request-response protocol</h3>
+        <div>
+            <p>The messages sent by the client, usually a Web browser, are called requests</p>
+            <p>the messages sent by the server as an answer are called responses.</p>
+            <p>HTTP is a request-response protocol, meaning that a client (such as a web browser) sends a request to a server, and the server returns a response to the client. The request and response are typically in the form of messages that follow a specific format. The request message includes information such as the <code>method</code> (e.g. GET, POST), the <code>URL</code> (Uniform Resource Locator) of the resource being requested, and any other necessary <code>headers or data</code>. The response message includes information such as the <code>status code</code> (e.g. 200, 404), any <code>headers</code>, and the <code>data being returned</code> (such as HTML, CSS, or JavaScript).</p>
+        <hr>
+        <hr>
+        </div>
+
+        <h3>stateless </h3>
+        <div>
+        <p>
+        HTTP is a stateless protocol, meaning that each request is independent and does not rely on information from previous requests. This allows for flexibility and scalability, but also means that additional mechanisms (such as cookies or session IDs) may be needed to maintain state or track user information across multiple requests.
+        </p>
+        <hr>
+        <hr>
+        </div>
+
+        <h3>Summary</h3>
+        <div>
+          <p>HTTP is a key technology used by the World Wide Web, and is typically used in combination with other technologies such as HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) to build and display web pages in a web browser.</p>
+          <hr>
+          <hr>
+        </div>
 
         <h3>A simple HTTP request</h3>
         <p>An HTTP request and response follow a particular format:</p>
@@ -83,10 +66,9 @@
         <img src="img/http_request_respnse.png" alt="" width="800">
         <p> An HTTP request is made by a client, to a named host, which is located on a server. The aim of the request is to access a resource on the server. An HTTP response is made by a server to a client. The aim of the response is to provide the client with the resource it requested, or to inform the client that the action it requested has been carried out, or to inform the client that an error occurred in processing its request. All these actions are described as "requirements". A client or server that fulfils the requirements for its version of the HTTP protocol is said to be "compliant" with the HTTP specification.</p>
 
-  </div>
 
-  <div class="tab-pane fade" id="HTTP_requests" role="tabpanel" aria-labelledby="profile-tab">
-       <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP requests</h4>
+
+ <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP requests</h4>
       <p> An HTTP request is made by a client, to a named host, which is located on a server. The aim of the request is to access a resource on the server.</p>
 
 <p>To make the request, the client uses components of a URL (Uniform Resource Locator), which includes the information needed to access the resource. The components of a URL explains URLs.</p>
@@ -129,19 +111,13 @@ If-Modified-Since: Fri, 10 Dec 2004 11:22:13 GMT</p>
 <p>The body content of any HTTP message can be referred to as a message body or entity body. Technically, the entity body is the actual content of the message. The message body contains the entity body, which can be in its original state, or can be encoded in some way for transport, such as by being broken into chunks (chunked transfer-coding). The message body of a request may be referred to for convenience as a request body.</p>
 <p>Message bodies are appropriate for some request methods and inappropriate for others. For example, a request with the POST method, which sends input data to the server, has a message body containing the data. A request with the GET method, which asks the server to send a resource, does not have a message body.</p>
 
-  </div>
-
-  <div class="tab-pane fade" id="div2" role="tabpanel" aria-labelledby="profile-tab">
-       <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Components of HTTP-based systems</h4>
+  <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Components of HTTP-based systems</h4>
                 <p>HTTP is a client-server protocol: requests are sent by one entity, the user-agent (or a proxy on behalf of it). Most of the time the user-agent is a Web browser, but it can be anything, for example a robot that crawls the Web to populate and maintain a search engine index.</p>
                 <p>Each individual request is sent to a server, which handles it and provides an answer, called the response. Between the client and the server there are numerous entities, collectively called proxies, which perform different operations and act as gateways or caches, for example.</p>
 
                 <img src="img/Client-server-chain.png" class="img-fluid">
-                <p>In reality, there are more computers between a browser and the server handling the request: there are routers, modems, and more. Thanks to the layered design of the Web, these are hidden in the network and transport layers. HTTP is on top, at the application layer. Although important to diagnose network problems, the underlying layers are mostly irrelevant to the description of HTTP.</p>
-  </div>
 
-  <div class="tab-pane fade" id="HTTP_responses" role="tabpanel" aria-labelledby="profile-tab">
-       <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP responses</h4>
+  <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP responses</h4>
        <p>An HTTP response is made by a server to a client. The aim of the response is to provide the client with the resource it requested, or inform the client that the action it requested has been carried out; or else to inform the client that an error occurred in processing its request.</p>
        <p>An HTTP response contains:</p>
        <ol>
@@ -184,27 +160,16 @@ Content-type: image/jpg
 <p>Message bodies are used for most responses. The exceptions are where a server is responding to a client request that used the HEAD method (which asks for the headers but not the body of the response), and where a server is using certain status codes.</p>
 
 <p>For a response to a successful request, the message body contains either the resource requested by the client, or some information about the status of the action requested by the client. For a response to an unsuccessful request, the message body might provide further information about the reasons for the error, or about some action the client needs to take to complete the request successfully.</p>
-               
-  </div>
-
-
-  <div class="tab-pane fade" id="div3" role="tabpanel" aria-labelledby="contact-tab">
-        <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Client: the user-agent</h4>
+  <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Client: the user-agent</h4>
                 <p>The user-agent is any tool that acts on the behalf of the user. This role is primarily performed by the Web browser</p>
                 <p>The browser is always the entity initiating the request. It is never the server (though some mechanisms have been added over the years to simulate server-initiated messages). </p>
                 <p>To present a Web page, the browser sends an original request to fetch the HTML document that represents the page. It then parses this file, making additional requests corresponding to execution scripts, layout information (CSS) to display, and sub-resources contained within the page (usually images and videos). The Web browser then mixes these resources to present to the user a complete document, the Web page. Scripts executed by the browser can fetch more resources in later phases and the browser updates the Web page accordingly.</p>
                 <p>A Web page is a hypertext document. This means some parts of displayed text are links which can be activated (usually by a click of the mouse) to fetch a new Web page.</p>
-  </div>
-
-  <div class="tab-pane fade" id="div4" role="tabpanel" aria-labelledby="contact-tab">  
-  <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">The Web server</h4>
+ <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">The Web server</h4>
 
 <p>On the opposite side of the communication channel, is the server, which serves the document as requested by the client</p>
 <p>A server is not necessarily a single machine, but several server software instances can be hosted on the same machine. With HTTP/1.1 and the Host header, they may even share the same IP address.</p>   
-  </div>
-
-  <div class="tab-pane fade" id="div5" role="tabpanel" aria-labelledby="contact-tab">   
-  <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Proxies</h4>
+<h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">Proxies</h4>
 
 <p>Between the Web browser and the server, numerous computers and machines relay the HTTP messages</p>
 <p>most of these operate at the transport, network or physical levels, Those operating at the application layers are generally called proxies</p>
@@ -217,10 +182,7 @@ Content-type: image/jpg
     <li>logging (allowing the storage of historical information)</li>
 
 </ul>  
-  </div>
-
-  <div class="tab-pane fade" id="div6" role="tabpanel" aria-labelledby="contact-tab">  
-  <h2 class="mt-5 mb-4 py-2 px-2 bg-success d-inline-block">Basic aspects of HTTP</h2>
+ <h2 class="mt-5 mb-4 py-2 px-2 bg-success d-inline-block">Basic aspects of HTTP</h2>
                 <br>
 
                 <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP is simple</h4>
@@ -235,10 +197,7 @@ Content-type: image/jpg
 
                 <h4 class="mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP and connections</h4>
                 <p>Before a client and server can exchange an HTTP request/response pair, they must establish a TCP connection,</p>   
-  </div>
-
-  <div class="tab-pane fade" id="div7" role="tabpanel" aria-labelledby="contact-tab"> 
-  <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">What can be controlled by HTTP</h4>
+<h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">What can be controlled by HTTP</h4>
                 <p>Here is a list of common features controllable with HTTP.</p>
                 <ul>
                     <li><b><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching" target="_blank">Caching</a></b> How documents are cached can be controlled by HTTP. The server can instruct proxies and clients, about what to cache and for how long. The client can instruct intermediate cache proxies to ignore the stored document.</li>
@@ -247,10 +206,7 @@ Content-type: image/jpg
                     <li><b>Proxy and tunneling</b></li>
                     <li><b>Sessions</b></li>
                 </ul>    
-  </div>
-
-  <div class="tab-pane fade" id="div8" role="tabpanel" aria-labelledby="contact-tab">   
-  <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP flow</h4>
+ <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP flow</h4>
 
 <p>When a client wants to communicate with a server, either the final server or an intermediate proxy, it performs the following steps:</p>
 <ol>
@@ -279,10 +235,7 @@ Content-Type: text/html
     <li>Close or reuse the connection for further requests.</li>
 </ol>
 <p>If HTTP pipelining is activated, several requests can be sent without waiting for the first response to be fully received. HTTP pipelining has proven difficult to implement in existing networks, where old pieces of software coexist with modern versions. HTTP pipelining has been superseded in HTTP/2 with more robust multiplexing requests within a frame.</p>  
-  </div>
-
-  <div class="tab-pane fade" id="div9" role="tabpanel" aria-labelledby="contact-tab">   
-  <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP Messages</h4>
+ <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTTP Messages</h4>
                 <p>There are two types of HTTP messages, requests and responses, each with its own format.</p>
 
                 <h6 class="mt-6 mb-4 py-1 pl-5 pr-2 bg-success d-inline-block">Requests</h6>
@@ -308,17 +261,11 @@ Content-Type: text/html
                     <li>HTTP headers, like those for requests.</li>
                     <li>Optionally, a body containing the fetched resource.</li>
                 </ul>  
-  </div>
-
-  <div class="tab-pane fade" id="div10" role="tabpanel" aria-labelledby="contact-tab">   
-  <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">APIs based on HTTP</h4>
+<h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">APIs based on HTTP</h4>
                 <p>The most commonly used API based on HTTP is the <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" target="_blank">XMLHttpRequest</a> API, which can be used to exchange data between a user agent and a server. The modern <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">Fetch API</a> provides the same features with a more powerful and flexible feature set.</p>
 
                 <p>Another API, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events" target="_blank">server-sent</a> events, is a one-way service that allows a server to send events to the client, using HTTP as a transport mechanism. Using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource" target="_blank">EventSource</a> interface, the client opens a connection and establishes event handlers. The client browser automatically converts the messages that arrive on the HTTP stream into appropriate <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" target="_blank">Event</a> objects, delivering them to the event handlers that have been registered for the events' <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/type" target="_blank">type</a>a> if known, or to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource/onmessage" target="_blank">onmessage</a>a> event handler if no type-specific event handler was established.</p>  
-  </div>
-
-  <div class="tab-pane fade" id="HTM_forms" role="tabpanel" aria-labelledby="contact-tab">   
-  <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTML forms</h4>
+ <h4 class="mt-5 mb-4 py-2 pl-5 pr-2 bg-info d-inline-block">HTML forms</h4>
             
  <p>In HTML, forms are areas delimited by a &#60;form> tag, containing text input boxes, buttons, check boxes, and other features of a graphical user interface. Forms are used by web applications to allow users to provide data to be sent to the server.</p>
 
@@ -338,16 +285,17 @@ firstname=Maria&lastname=Smith
 
 <p>
 The character set that is required for encoding the form data is specified by the CHARACTERSET option, and must match the forms encoding determined by the corresponding HTML form.</p>
-  </div>
 
 
 
 
-</div>
+          
+  </div> 
+    
     </div>
-  
 </div>
 
 
 
-@endsection
+
+<?php include_once '../inc/footer.php'; ?>
