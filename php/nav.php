@@ -11,19 +11,15 @@
        <li class="nav-item active">
         <a class="nav-link" href="Basic-syntax.php">Basic syntax</a>
        </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-          Data Types
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="data-type.php">Data types</a>
-          <a class="dropdown-item" href="data-type-string.php">String</a>
-          <a class="dropdown-item" href="data-type-boolean.php">Boolean</a>
-          <a class="dropdown-item" href="data-type-integer.php">Integer</a>
-          <a class="dropdown-item" href="data-type-float.php">Float</a>         
-         
-        </div>
-      </li>
+
+       <li class="nav-item active">
+        <a class="nav-link" href="data.php">Data</a>
+      </li> 
+
+       
+      <li class="nav-item active">
+        <a class="nav-link" href="data-type.php">Data types</a>
+       </li>
        <li class="nav-item active">
         <a class="nav-link" href="variable.php">Variables</a>
        </li>
@@ -156,10 +152,7 @@
         <a class="nav-link" href="image.php">File Uploading</a>
       </li> 
 
-      <li class="nav-item active">
-        <a class="nav-link" href="data.php">Data</a>
-      </li> 
-
+     
       
 
        <li class="nav-item active">

@@ -7,7 +7,7 @@
             </div>
 
             <div class="col-4">
-            <h1><a href="js/js.php">HTML</a></h1>                
+            <h1><a href="html/html.php">HTML</a></h1>                
             </div>
 
             <div class="col-4">
@@ -35,7 +35,7 @@
             </div>
 
             <div class="col-4">
-            <h1><a href="laravel/laravel.php">Blank</a></h1>                
+            <h1><a href="vue/index.php">Vue</a></h1>                
             </div>
 
             <div class="col-4">

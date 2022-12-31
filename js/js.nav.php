@@ -93,8 +93,11 @@
         Promises & Async/Await
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="Getting-started.php">Getting started</a>          
-          
+          <a class="dropdown-item" href="<?= $rool_url ?>js/promise/Asynchronous.php">Asynchronous</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>js/promise/Promises.php">Promises</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>js/promise/callback-function.php">callback-function</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>js/promise/fetch.php">fetch</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>js/promise/Async-await.php">Async/await</a> 
         </div>
       </li>
 
