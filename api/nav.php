@@ -9,9 +9,35 @@
     <ul class="mr-auto navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="api.php">API</a>
-      </li> 
-     
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="synchronous.php">Synchronous</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="asynchronous.php">Asynchronous</a>
+      </li>
 
+      <li class="nav-item active">
+        <a class="nav-link" href="Promises.php">Promises</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="async-await.php">async/await</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="fetch.php">fetch</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="asynchronous.php">Asynchronous</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="asynchronous.php">Asynchronous</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="asynchronous.php">Asynchronous</a>
+      </li>
+      
+       
       <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
           Framework Concept

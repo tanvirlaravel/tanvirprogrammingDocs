@@ -29,6 +29,17 @@
       <li class="nav-item active">
         <a class="nav-link" href="vue.php">Vue js</a>
       </li> 
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          State Management
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="State.php">State</a>
+        
+         
+        </div>
+      </li>
      
      
 

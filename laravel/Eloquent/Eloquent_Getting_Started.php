@@ -1,20 +1,20 @@
-<?php include_once '../inc/header.php'; ?>
+<?php include_once '../../inc/header.php'; ?>
 <div class="container">
-    
-    <?php include_once 'nav.php'; ?>
+
+    <?php include_once '../nav.php'; ?>
     <h2>Eloquent: Getting Started</h2>
-      
+
     <div class="row">
            <div class="col-4">
             <ul id="sidebar_links">
-                
+
             </ul>
             <span class="text-danger">activity</span>
-           </div> 
+           </div>
            <div class="col-8">
            <h3>Introduction</h3>
            <p><a href="http://tanvirprogrammingdocs.test/database/orm.php" target="_blank">ORM</a></p>
-           <p>When using Eloquent, each database table has a corresponding "Model" that is used to interact with that table.</p>          
+           <p>When using Eloquent, each database table has a corresponding "Model" that is used to interact with that table.</p>
            <hr>
            <hr>
 
@@ -38,7 +38,7 @@
            </pre>
 
            <h5>Primary Keys</h5>
-           <p>primary key column named id</p>          
+           <p>primary key column named id</p>
            <pre class="bg-dark p-2 text-white">
            class Flight extends Model
             {
@@ -47,7 +47,7 @@
            </pre>
 
            <h5>Timestamps</h5>
-           <p>By default, Eloquent expects created_at and updated_at columns to exist on your model's corresponding database table. </p>          
+           <p>By default, Eloquent expects created_at and updated_at columns to exist on your model's corresponding database table. </p>
            <pre class="bg-dark p-2 text-white">
            class Flight extends Model
             {
@@ -56,7 +56,7 @@
            </pre>
 
            <h5>Database Connections</h5>
-           <p>By default, all Eloquent models will use the default database connection that is configured for your application.</p>          
+           <p>By default, all Eloquent models will use the default database connection that is configured for your application.</p>
            <pre class="bg-dark p-2 text-white">
            class Flight extends Model
             {
@@ -64,7 +64,7 @@
             }
            </pre>
 
-           <h5>Default Attribute Values</h5>                   
+           <h5>Default Attribute Values</h5>
            <pre class="bg-dark p-2 text-white">
            class Flight extends Model
             {
@@ -80,7 +80,7 @@
            <hr>
 
            <h3>Retrieving Models</h3>
-           <p> each Eloquent model as a powerful query builder allowing you to fluently query the database table associated with the model. .</p>          
+           <p> each Eloquent model as a powerful query builder allowing you to fluently query the database table associated with the model. .</p>
            <pre class="bg-dark p-2 text-white">
            use App\Models\Flight;
 
@@ -96,13 +96,13 @@
             // Refreshing Models
             $flight = Flight::where('number', 'FR 900')->first();
             $flight->fresh();
-            $flight->refresh();            
+            $flight->refresh();
            </pre>
            <hr>
            <hr>
 
            <h3>Collections</h3>
-           <p> Eloquent methods like all and get retrieve multiple records from the database. However, these methods don't return a plain PHP array. Instead, an instance of <span class="text-danger">Illuminate\Database\Eloquent\Collection</span> is returned. which provides a variety of helpful <span class="text-danger">methods</span> for interacting with data collections.</p>          
+           <p> Eloquent methods like all and get retrieve multiple records from the database. However, these methods don't return a plain PHP array. Instead, an instance of <span class="text-danger">Illuminate\Database\Eloquent\Collection</span> is returned. which provides a variety of helpful <span class="text-danger">methods</span> for interacting with data collections.</p>
            <hr>
            <hr>
 
@@ -111,21 +111,21 @@
            <hr>
            <hr>
 
-           
-           
-           
 
-          
 
-           
 
-          
-          
-           </div> 
-    
+
+
+
+
+
+
+
+           </div>
+
     </div>
 </div>
 
 
 
-<?php include_once '../inc/footer.php'; ?>
+<?php include_once '../../inc/footer.php'; ?>

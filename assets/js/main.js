@@ -17,3 +17,10 @@ sidebarLinks.innerHTML = ul_li;
 document.querySelectorAll("span").forEach((element) => {
   element.classList.add("text-danger");
 });
+
+document.querySelectorAll("pre").forEach((element) => {
+  const cls = ["p-2", "bg-dark", "text-white"];
+  element.classList.add(...cls); 
+});
+
+ 

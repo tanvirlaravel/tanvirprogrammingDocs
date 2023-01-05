@@ -7,26 +7,59 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="mr-auto navbar-nav">
+
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Architecture Concepts
+       </a>
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/how_laravel_works.php">how laravel works</a>
+         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/Request_Lifecycle.php">Request Lifecycle </a>
+         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/middleware.php">middleware </a>
+         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/Service_Container.php">Service Container </a>
+       </div>
+     </li>
+
       <li class="nav-item active">
         <a class="nav-link" href="blade.php">Blade</a>
-      </li> 
+      </li>
+
+
       <li class="nav-item active">
         <a class="nav-link" href="event.php">Event</a>
-      </li> 
+      </li>
 
       <li class="nav-item active">
         <a class="nav-link" href="file_storage.php">File Storage</a>
-      </li> 
+      </li>
 
-      
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+         blade
+       </a>
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="Components.php">Components</a>
+       </div>
+     </li>
+
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+       Database
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Database/GettingStarted.php">Getting Started</a>
+      </div>
+    </li>
+
 
        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
           Eloquent
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="Eloquent_Getting_Started.php">Getting Started</a>
-          <a class="dropdown-item" href="Relationships.php">Relationships</a>         
+          <a class="dropdown-item" href="<?= $rool_url ?>laravel/Eloquent/Eloquent_Getting_Started.php">Getting Started</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>laravel/Eloquent/Relationships.php">Relationships</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>laravel/Eloquent/Polymorphic_Relationships.php">Polymorphic Relationships</a>
           <a class="dropdown-item" href="#">Collections</a>
           <a class="dropdown-item" href="#">Mutators & Casting</a>
           <a class="dropdown-item" href="#">API Resources</a>
@@ -46,12 +79,12 @@
           <a class="dropdown-item" href="Encryption.php">Encryption</a>
           <a class="dropdown-item" href="Hashing.php">Hashing</a>
           <a class="dropdown-item" href="Resetting_Passwords.php">Resetting Passwords</a>
-          
+
         </div>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="defination.php">Defination</a>
-      </li> 
+      </li>
 
     </ul>
     <!-- <form class="my-2 form-inline my-lg-0">
