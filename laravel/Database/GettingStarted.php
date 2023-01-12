@@ -34,175 +34,83 @@
            </div>
 
 
-           <h3>Database Transactions</h3>
-           <h3>Connecting To The Database CLI</h3>
-           <h3>Inspecting Your Databases</h3>
-           <h3>Monitoring Your Databases</h3>
-
             <h3>Running SQL Queries</h3>
            <div>
            <p>Once you have configured your database connection, you may run queries using the <code>DB</code> facade. The DB facade provides methods for each type of query: select, update, insert, delete, and statement.</p>
            <pre>
-             class A {
-                  protected $b;
+           use Illuminate\Support\Facades\DB;
 
-                  public function __construct(B $b) {
-                      $this->b = $b;
-                  }
-              }
+           DB::select('select * from users where active = ?', [1]);
 
-              $b = new B;
-              $a = new A($b);
+           DB::update(
+                'update users set votes = 100 where name = ?',
+                ['Anita']
+            );
+
+            DB::delete('delete from users');
+            
            </pre>
-           <p>In this example, the A class has a dependency on the B class. Instead of hardcoding the dependency into the A class, we use dependency injection to pass an instance of B into the A class when it is constructed.</p>
-           <p>This means that we can use different implementations of the B class without changing the A class. For example, we could create a MockB class for testing and use that instead of the B class:</p>
+          
+           <hr>
+           <hr>
+
+           <h3>Database Transactions</h3>
+           <p>In the context of database management systems, a transaction is a unit of work that is performed against a database. Transactions are used to ensure that the database remains in a consistent state, even in the event of a system failure or other unexpected occurrences.</p>
+           <p>A transaction consists of one or more SQL statements that are executed as a single unit. If any of the statements fail, the entire transaction is rolled back, which means that all of the changes made by the transaction are undone. If all of the statements in the transaction are successful, the transaction is committed, which means that the changes are made permanent in the database.</p>
+           <p>Transactions are an important concept in database systems because they allow multiple operations to be grouped together and treated as a single unit of work. This makes it possible to ensure that the database remains in a consistent state, even if errors or failures occur during the execution of the transaction. Transactions also make it possible to roll back changes if needed, which can be useful for debugging or correcting mistakes.</p>
            <pre>
-             $b = new MockB;
-            $a = new A($b);
-           </pre>
-           <p>Dependency injection is a powerful tool for managing class dependencies and making your code more flexible and maintainable.</p>
-           <hr>
-           <hr>
-
-           <h3>application service</h3>
-           <p>An application service is a <code>class</code> that provides a specific service to the rest of the application. It is typically designed <code>to perform a single, well-defined task or a set of related tasks</code>.</p>
-           <p>Here are some tips for programming an application service:</p>
-           <ul>
-             <li>Keep it simple: An application service should be focused on a single responsibility. Don't try to do too much in a single service.</li>
-             <li>Use dependency injection: Dependency injection can make your application services more flexible and easier to test. Use constructor injection to inject any dependencies that the service needs to function.</li>
-             <li>Use interfaces: Interfaces can help to decouple your application services from their concrete implementations. This makes it easier to change the implementation of a service without affecting the rest of the application.</li>
-             <li>Test your service: It's important to test your application services to ensure that they are working correctly. You can use PHPUnit or another testing framework to write unit tests for your services.</li>
-             <li>Document your service: Documenting your application service can help other developers understand how to use it. You can use PHPDoc blocks to document the service's methods and their input and output.</li>
-
-           </ul>
+           use Illuminate\Support\Facades\DB;
+ 
+            DB::transaction(function () {
+                DB::update('update users set votes = 1');
+              
+                DB::delete('delete from posts');
+            });
+          </pre>
+          
 
            <hr>
            <hr>
 
 
-           <h3>laravel application service</h3>
-           <p>In Laravel, an application service is a <code>class</code> that provides a specific service to the rest of the application. This could be anything from sending emails to interacting with an external API.</p>
-           <p>Application services are typically registered with the Laravel service container, which allows them to be resolved and injected into other parts of the application as needed. This makes it easy to use and manage the services throughout the application.</p>
+           <h3>Deadlocks</h3>
+           <p>A deadlock is a situation that can occur in a database management system when two or more transactions are waiting for each other to release locks on resources that they both need. As a result, each transaction is waiting for the other to complete, and neither can make progress. This creates a cycle of dependency that can cause the system to become stuck, or deadlocked.</p>
+           <p>There are several ways to prevent or resolve deadlocks in a database system. One common approach is to use a lock timeout, which allows the system to automatically release locks after a certain amount of time has passed. Another approach is to use a deadlock detection algorithm, which can identify and resolve deadlocks by rolling back one of the transactions involved in the deadlock.</p>
+           <p>It is also possible to design the database schema and the application code in such a way as to minimize the risk of deadlocks occurring. For example, by using a standardized order for acquiring locks on resources, or by using a technique known as lock escalation, which reduces the number of locks held by transactions.</p>
+          
+        
+           <hr>
+           <hr>
+
+           <h3>Inspecting Your Databases</h3>
+           <p>Using the db:show and db:table Artisan commands, you can get valuable insight into your database and its associated tables.</p>
            <pre>
-             namespace App\Services;
+           php artisan db:show
 
-              use App\Models\User;
-              use App\Mail\WelcomeEmail;
-              use Illuminate\Support\Facades\Mail;
+           php artisan db:show --database=pgsql
 
-              class UserService
-              {
-                  public function create(array $data)
-                  {
-                      $user = User::create($data);
+           php artisan db:show --counts --views
 
-                      Mail::to($user->email)->send(new WelcomeEmail($user));
-
-                      return $user;
-                  }
-              }
-           </pre>
-           <p>In this example, the UserService class provides a create method that creates a new user and sends a welcome email to the user's email address. This service could be used anywhere in the application where a new user needs to be created.</p>
-           <hr>
-           <hr>
-
-           <h3>class is resolved</h3>
-           <p>In the context of the Laravel service container, "resolving" a class means creating an instance of the class and injecting its dependencies.</p>
-           <pre>
-             class A {
-                  public function __construct(B $b) {
-                      // Class A depends on class B
-                  }
-              }
-
-              $a = app(A::class);
+           //Table Overview
+           php artisan db:table users
               </pre>
-           <p>In this example, the app function is used to resolve the A class. The service container will create an instance of the A class and pass an instance of the B class as an argument to the constructor. This creates an instance of the A class with all of its dependencies injected.</p>
-           <pre>
-             $a = resolve(A::class);
-           </pre>
-           <p>Resolving a class is a useful way to manage class dependencies and make your code more flexible and maintainable.</p>
+           
            <hr>
            <hr>
 
 
-           <h3 class="text-success">Introduction</h3>
-          <div>
-          <p>The Laravel service container is a powerful tool for managing class dependencies and performing dependency injection. It's a central place where all of the services your application uses are registered and managed.</p>
+           <h3 class="text-success">Monitoring Your Databases</h3>
+          <div>        
 
-          <p>Here are a few key things you can do with the Laravel service container:</p>
-
-          <ul>
-              <li>Register a class as a service: You can register a class as a service by binding it to a key in the service container. You can then use the service container to resolve the class whenever it is needed.</li>
-              <li>Perform dependency injection: You can use the service container to inject dependencies into your classes. This means that you don't have to hardcode the dependencies of a class, but can instead specify them in the service container and have them automatically injected when the class is resolved.</li>
-              <li>Use automatic resolution: The service container can automatically resolve the dependencies of a class and instantiate it for you. This means you don't have to worry about manually instantiating dependencies or passing them to the class.</li>
-
-          </ul>
-
-           <hr>
-           <hr>
-          </div>
-
-        <h3>Binding</h3>
-        <div>
-          <p>In the Laravel service container, a binding is a way to register a class or interface with the container and specify how the container should resolve it.</p>
           <pre>
-            app()->bind(LoggerInterface::class, FileLogger::class);
-
-            // Now you can use the service container to resolve an instance of the FileLogger class
-            $logger = app(LoggerInterface::class);
+            php artisan db:monitor --databases=mysql,pgsql --max=100
           </pre>
-          <p>In this example, we are binding the LoggerInterface interface to the FileLogger class. This means that whenever the service container is asked to resolve the LoggerInterface interface, it will return an instance of the FileLogger class.</p>
-
-          <p>You can also use the singleton method to create a singleton binding, which will always return the same instance of the class:</p>
-          <pre>
-            app()->singleton(LoggerInterface::class, FileLogger::class);
-
-            // Both of these calls will return the same instance of the FileLogger class
-            $logger1 = app(LoggerInterface::class);
-            $logger2 = app(LoggerInterface::class);
-
-          </pre>
-          <p>Bindings are a useful way to manage class dependencies and make your code more flexible and maintainable.</p>
+         
+        
         <hr>
         <hr>
         </div>
 
-
-        <h3>Resolving</h3>
-        <div>
-          <p>In the Laravel service container, resolving a class means creating an instance of the class and injecting its dependencies.</p>
-          <pre>
-            class A {
-                public function __construct(B $b) {
-                    // Class A depends on class B
-                }
-            }
-
-            $a = app(A::class);
-
-          </pre>
-          <p>In this example, the app function is used to resolve the A class. The service container will create an instance of the A class and pass an instance of the B class as an argument to the constructor. This creates an instance of the A class with all of its dependencies injected.</p>
-          <p>You can also use the resolve function to resolve a class:</p>
-          <pre>
-            $a = resolve(A::class);
-</pre>
-          <p>Resolving a class is a useful way to manage class dependencies and make your code more flexible and maintainable.</p>
-        <hr>
-        <hr>
-        </div>
-
-        <h3>Method Invocation & Injection</h3>
-        <div>
-        <hr>
-        <hr>
-        </div>
-
-        <h3>PSR-11</h3>
-        <div>
-        <hr>
-        <hr>
-        </div>
 
 
 
