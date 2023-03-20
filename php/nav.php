@@ -12,29 +12,29 @@
         <a class="nav-link" href="Basic-syntax.php">Basic syntax</a>
        </li>
 
-       <li class="nav-item active">
-        <a class="nav-link" href="data.php">Data</a>
-      </li> 
-
-       
-      <li class="nav-item active">
-        <a class="nav-link" href="data-type.php">Data types</a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="variable.php">Variables</a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="constant.php">Constant</a>
-       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Data
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="data.php">Data</a>
+          <a class="dropdown-item" href="data-type.php">Data types</a>
+          <a class="dropdown-item" href="variable.php">Variables</a>
+          <a class="dropdown-item" href="constant.php">Constant</a>           
+          <a class="dropdown-item" href="constant.php">Predefined Variables</a>           
+         
+        </div>
+      </li>
+     
+    
+     
        <li class="nav-item active">
         <a class="nav-link" href="Expressions.php">Expressions </a>
        </li>
        <li class="nav-item active">
         <a class="nav-link" href="Operators.php">Operators</a>
        </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="constant.php">Control Structures ¶</a>
-       </li>       
+             
 
        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -69,9 +69,19 @@
        </li>
 
 
-       <li class="nav-item active">
-        <a class="nav-link" href="Classes-and-Objects.php">Classes and Objects  </a>
-       </li>   
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+       OOP
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/introduction.php">Introduction</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/How-create-classes-objects.php">How to create classes and objects?
+          <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/$this-keyword.php">$this keyword</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Chaining_methods_properties.php">Chaining methods and properties</a>
+             
+         
+        </div>
+      </li>
        
       
      
@@ -113,9 +123,7 @@
        <li class="nav-item active">
         <a class="nav-link" href="Exceptions.php">References Explained</a>
        </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Predefined Variables</a>
-       </li>
+      
        <li class="nav-item active">
         <a class="nav-link" href="Exceptions.php">Predefined Exceptions</a>
        </li>

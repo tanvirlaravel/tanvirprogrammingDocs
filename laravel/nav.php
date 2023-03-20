@@ -48,7 +48,8 @@
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Database/GettingStarted.php">Getting Started</a>
-        <a class="dropdown-item" href="Migrations.php">Migrations</a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Database/Migrations.php">Migrations</a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Database/defination.php">Defination</a>
       </div>
     </li>
 
@@ -58,11 +59,11 @@
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Security/Authentication.php"">Authentication</a>
-        <a class="dropdown-item" href="Authorization.php">Authorization</a>
-        <a class="dropdown-item" href="Email_Verification.php">Email Verification</a>
-        <a class="dropdown-item" href="Encryption.php">Encryption</a>
-        <a class="dropdown-item" href="Hashing.php">Hashing</a>
-        <a class="dropdown-item" href="Resetting_Passwords.php">Resetting Passwords</a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Security/Authorization.php">Authorization</a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Security/Email_Verification.php">Email Verification</a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Security/Encryption.php">Encryption</a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Security/Hashing.php">Hashing</a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Security/Resetting_Passwords.php">Resetting Passwords</a>
 
       </div>
     </li>
