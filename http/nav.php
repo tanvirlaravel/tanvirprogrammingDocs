@@ -16,9 +16,17 @@
       <li class="nav-item active">
         <a class="nav-link" href="Servers.php">Servers</a>
       </li> 
+
+        <li class="nav-item active">
+        <a class="nav-link" href="HTTP_verb.php">HTTP verb</a>
+      </li> 
+
+      
       <li class="nav-item active">
         <a class="nav-link" href="Request.php">Request</a>
       </li>
+
+
 
       <li class="nav-item active">
         <a class="nav-link" href="Response.php">Response</a>

@@ -14,12 +14,26 @@
        </a>
        <div class="dropdown-menu">
          <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/how_laravel_works.php">how laravel works</a>
-         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/Request_Lifecycle.php">Request Lifecycle </a>
+         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/Request_Lifecycle.php">Request Lifecycle <span class="badge badge-secondary">C</span></a>
          <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/middleware.php">middleware </a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/Request_Lifecycle.php">Service Providers <span class="badge badge-secondary">C</span></a>
          <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/Service_Container.php">Service Container </a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/Request_Lifecycle.php">Service Container Binding and Resolution <span class="badge badge-secondary">C</span></a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/Request_Lifecycle.php">Facades <span class="badge badge-secondary">C</span></a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Architecture_Concepts/Request_Lifecycle.php">HTTP Verbs <span class="badge badge-secondary">C</span></a>
        </div>
      </li>
 
+
+ <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Basic
+       </a>
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Basics/Routing.php">Route</a>
+        
+       </div>
+     </li>
       <li class="nav-item active">
         <a class="nav-link" href="blade.php">Blade</a>
       </li>

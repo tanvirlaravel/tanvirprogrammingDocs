@@ -6,7 +6,7 @@ h3El.forEach((h_3) => {
   const elText = h_3.innerText;
   const elId = elText.split(" ").join("_");
   h_3.setAttribute("id", elId);
-  h_3.setAttribute("class", "text-danger");
+  h_3.setAttribute("class", "text-info");
   ul_li += `
     <li><a href="#${elId}">${elText}</a></li>
   `;

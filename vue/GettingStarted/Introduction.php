@@ -20,19 +20,20 @@
                 <div>
                     <p>Vue is a JavaScript framework for building <a href="http://tanvirprogrammingdocs.test/vue/Theory/user_interfaces.php" target="_blank" >user interfaces </a> ?. It builds on top of standard HTML, CSS, and JavaScript and provides a <a href="http://tanvirprogrammingdocs.test/vue/Theory/declarative_programming.php" target="_blank">declarative</a>  ? and <a href="http://tanvirprogrammingdocs.test/vue/Theory/component-based.php" target="_blank">component-based</a> ? programming model that helps you efficiently develop user interfaces, be they simple or complex.</p>
                     
-                    <h4>user interfaces</h4>
-                    <h4>declarative</h4>
-                    <h4>component-based</h4>
-                    <hr>
-                    <hr>
+                   
                 </div>
 
 
-                 <h3>YEAR</h3>
+                 <h3>The Progressive Framework</h3>
                 <div>
-                    <p></p>
+                    <p>Vue is a framework and ecosystem that covers most of the common features needed in frontend development. But the web is extremely diverse - the things we build on the web may vary drastically in form and scale. With that in mind, Vue is designed to be flexible and incrementally adoptable. Depending on your use case, Vue can be used in different ways:</p>
                     <ul>
-                        <li>year()</li>
+                        <li>Enhancing static HTML without a build step</li>
+                        <li>Embedding as Web Components on any page</li>
+                        <li>Single-Page Application (SPA)</li>
+                        <li>Fullstack / Server-Side Rendering (SSR)</li>
+                        <li>Jamstack / Static Site Generation (SSG) </li>
+                        <li>Targeting desktop, mobile, WebGL, and even the terminal</li>
                     </ul>
                     <hr>
                     <hr>
