@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="<?= $rool_url ?>assets/css/bootstrap.min.css">
-    
+    <style type="text/css">
+        img{
+            width:100%;
+        }
+    </style>
 </head>
 <body>
     

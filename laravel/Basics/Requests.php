@@ -2,7 +2,7 @@
 <div class="container">
 
     <?php include_once '../nav.php'; ?>
-    <h2>Routing</h2>
+    <h2>Requests</h2>
 
     <div class="row">
            <div class="col-4">
@@ -16,14 +16,6 @@
            <div class="col-8">
 
 
-           <h3>Basic Routing</h3>
-           <pre class="pt-4">
-       Route::get('/greeting', function () {
-            return 'Hello World';
-        });
-           </pre>
-           <hr>
-           <hr>
 
            <h3>The Default Route Files</h3>
            <a href="https://laravel.com/docs/master/routing#the-default-route-files" target="_blank">Doc v-10</a>

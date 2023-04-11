@@ -31,6 +31,7 @@
        </a>
        <div class="dropdown-menu">
          <a class="dropdown-item" href="<?= $rool_url ?>laravel/Basics/Routing.php">Route</a>
+         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Basics/Requests.php">Requests</a>
         
        </div>
      </li>

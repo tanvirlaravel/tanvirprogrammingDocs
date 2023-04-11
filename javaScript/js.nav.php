@@ -163,3 +163,47 @@
   
   </div>
 </nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="ml-auto navbar-nav">
+   
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Complete beginners
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript-basics.php">JavaScript basics</a> 
+          
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        JavaScript First Steps
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/What-is-JavaScript.php">What is JavaScript</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/A-first-splash-into-JavaScript.php">A first splash into JavaScript</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/What_went_wrong_Troubleshooting_JavaScript.php">What went wrong? Troubleshooting JavaScript</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/Storing_the_information_you_need_Variables.php">Storing the information you need — Variables</a> 
+          
+        </div>
+      </li>
+
+    
+
+     
+
+    <!--   <li class="nav-item">
+        <a class="nav-link" href="<?= $rool_url;?>javaScript/Definations/defination.php">Definations</a>
+      </li> -->
+     
+     
+    </ul>
+  
+  </div>
+</nav>

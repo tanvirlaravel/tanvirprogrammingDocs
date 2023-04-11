@@ -54,10 +54,6 @@
 
      
 
-      <li class="nav-item active">
-        <a class="nav-link" href="<?= $rool_url ?>vue/QuickStart.php">Quick Start</a>
-      </li> 
-
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
         Essentials
