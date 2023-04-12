@@ -1,7 +1,7 @@
-<?php include_once '../../inc/header.php'; ?>
+<?php include_once './../../inc/header.php'; ?>
 <div class="container">
     
-    <?php include_once '../js.nav.php'; ?>
+    <?php include_once '../../js.nav.php'; ?>
 
       
     <div class="row">
@@ -18,7 +18,7 @@
             
             <h3>Introduction</h3>
             <div>
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash" target="_blank">MDN Docs</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">MDN Docs</a>
             </div>  
             <hr>
             <hr>
@@ -53,4 +53,4 @@
 
 
 
-<?php include_once '../../inc/footer.php'; ?>
+<?php include_once '../../../inc/footer.php'; ?>

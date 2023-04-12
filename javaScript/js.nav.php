@@ -186,10 +186,15 @@
         JavaScript First Steps
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/What-is-JavaScript.php">What is JavaScript</a> 
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/A-first-splash-into-JavaScript.php">A first splash into JavaScript</a> 
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/What_went_wrong_Troubleshooting_JavaScript.php">What went wrong? Troubleshooting JavaScript</a> 
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/Storing_the_information_you_need_Variables.php">Storing the information you need — Variables</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/What-is-JavaScript.php">What is JavaScript</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/A-first-splash-into-JavaScript.php">A first splash into JavaScript</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/What_went_wrong_Troubleshooting_JavaScript.php">What went wrong? Troubleshooting JavaScript</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/Storing_the_information_you_need_Variables.php">Storing the information you need — Variables</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/Basic-math-JavaScript-numbers-and_operators.php">Basic math in JavaScript — numbers and operators</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/HandlingtextstringsinJavaScript.php">Handling text — strings in JavaScript</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/Usefulstringmethods.php">Useful string methods</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/Arrays.php">Arrays</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/Silly-story-generator.php">Useful string methods</a> 
           
         </div>
       </li>

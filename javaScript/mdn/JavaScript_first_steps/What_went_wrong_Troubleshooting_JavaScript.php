@@ -1,7 +1,7 @@
-<?php include_once '../../inc/header.php'; ?>
+<?php include_once '../../../inc/header.php'; ?>
 <div class="container">
     
-    <?php include_once '../js.nav.php'; ?>
+    <?php include_once '../../js.nav.php'; ?>
 
       
     <div class="row">
@@ -53,4 +53,4 @@
 
 
 
-<?php include_once '../../inc/footer.php'; ?>
+<?php include_once '../../../inc/footer.php'; ?>

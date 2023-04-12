@@ -1,7 +1,7 @@
-<?php include_once '../../inc/header.php'; ?>
+<?php include_once '../../../inc/header.php'; ?>
 <div class="container">
     
-    <?php include_once '../js.nav.php'; ?>
+    <?php include_once '../../js.nav.php'; ?>
 
       
     <div class="row">
@@ -22,7 +22,7 @@
                <p>One special thing about variables is that they can contain just about anything — not just strings and numbers. Variables can also contain complex data and even entire functions to do amazing things</p>
 
                <p>Note: We say variables contain values. This is an important distinction to make. Variables aren't the values themselves; they are containers for values. You can think of them being like little cardboard boxes that you can store things in.</p>
-               <img src="../img/boxes.png" width="100%">
+               <img src="../../img/boxes.png" width="100%">
 
                <p>Note: Don't confuse a variable that exists but has no defined value with a variable that doesn't exist at all — they are very different things. In the box analogy you saw above, not existing would mean there's no box (variable) for a value to go in. No value defined would mean that there is a box, but it has no value inside it.</p>
             
@@ -121,4 +121,4 @@
 
 
 
-<?php include_once '../../inc/footer.php'; ?>
+<?php include_once '../../../inc/footer.php'; ?>
