@@ -166,7 +166,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
- 
+  
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="ml-auto navbar-nav">
@@ -183,7 +183,7 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-        JavaScript First Steps
+        First Steps
         </a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript_first_steps/What-is-JavaScript.php">What is JavaScript</a> 
@@ -199,14 +199,83 @@
         </div>
       </li>
 
-    
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        building blocks
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/building_blocks/MakingDecisionsYourCode__Conditionals.php">Making decisions in your code — conditionals</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/building_blocks/LoopingCode.php">Looping code</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/building_blocks/Functions__reusable_blocks_code.php">Functions — reusable blocks of code</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/building_blocks/Build_your_own_function.php">Build your own function</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/building_blocks/Function_return_values.php">Function return values</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/building_blocks/Introduction_events.php">Introduction to events</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/building_blocks/Image_gallery.php">Image gallery</a> 
+         
+         
+          
+        </div>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Objects
+        </a>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/objects/Object_basics.php">Object basics</a> 
+        <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/objects/Object_prototypes.php">Object prototypes</a> 
+        <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/objects/Object-oriented-programming.php">Object-oriented programming</a> 
+        <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/objects/Classes_in-JavaScript.php">Classes in JavaScript</a> 
+        <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/objects/Working-with-JSON-data.php">Working with JSON data</a> 
+        <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/objects/Object-building-practice.php">Object building practice</a> 
+        
+         
+         
+          
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Asynchronous JavaScript
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/objects/Object_basics.php">Object basics</a> 
+        
+         
+         
+          
+        </div>
+      </li>
+     
+    </ul>
+  
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="ml-auto navbar-nav">
+   
+         
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Client-side web APIs
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/building_blocks/MakingDecisionsYourCode__Conditionals.php">Making decisions in your code — conditionals</a> 
+        
+         
+         
+          
+        </div>
+      </li>
 
      
 
-    <!--   <li class="nav-item">
-        <a class="nav-link" href="<?= $rool_url;?>javaScript/Definations/defination.php">Definations</a>
-      </li> -->
-     
      
     </ul>
   

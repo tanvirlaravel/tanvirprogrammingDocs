@@ -15,6 +15,7 @@
         </a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="<?= $rool_url ?>vue/GettingStarted/Introduction.php">Introduction</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>vue/GettingStarted/quick_start.php">Quick Start</a>
          
          
         </div>
@@ -31,6 +32,9 @@
           <a class="dropdown-item" href="<?= $rool_url ?>vue/Theory/declarative_programming.php">Declarative programming</a>
           <a class="dropdown-item" href="<?= $rool_url ?>vue/Theory/component-based.php">Component based</a>
           <a class="dropdown-item" href="<?= $rool_url ?>vue/Theory/state_and_reactivity.php">State and Reactivity</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>vue/Theory/Declarative_Rendering.php">Declarative Rendering</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>vue/Theory/vue_Reactivity.php">Reactivity</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>vue/Theory/virtual_Dom.php">Virtual Dom</a>
           
          
         </div>
