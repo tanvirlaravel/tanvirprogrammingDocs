@@ -72,14 +72,7 @@
       </li>
       
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-        Control flow Statements
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href=".php">Getting</a>
-        </div>
-      </li>
+    
 
       <li class="nav-item">
         <a class="nav-link" href="<?= $rool_url;?>javaScript/es6/es6.php">es6</a>
@@ -95,24 +88,7 @@
         </div>
       </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-        Objects & Prototypes
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="Getting-started.php">Getting started</a>          
-        
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-        Classes
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="Getting-started.php">Getting started</a>          
-         
-        </div>
-      </li>
+  
      
     </ul>
   
@@ -138,22 +114,7 @@
         </div>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">DOM</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Web API</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Advanced</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">SNIPPETS</a>
-      </li>
-
+     
       <li class="nav-item">
         <a class="nav-link" href="<?= $rool_url;?>javaScript/Definations/defination.php">Definations</a>
       </li>
@@ -171,21 +132,18 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="ml-auto navbar-nav">
    
-    <li class="nav-item">
-        <a class="nav-link" href="<?= $rool_url ?>javaScript/mdn/JavaScript.php" >
-        JavaScript
-        </a>
-        
+      <li class="nav-item">
+          <a class="nav-link" href="<?= $rool_url ?>javaScript/mdn/JavaScript.php" >
+          JavaScript
+          </a>          
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-        Complete beginners
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/mdn/JavaScript-basics.php">JavaScript basics</a> 
-          
-        </div>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?= $rool_url;?>javaScript/basics.php">Basics</a>
       </li>
+
+
+     
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -220,6 +178,17 @@
          
          
           
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Guide
+        </a>
+        <div class="dropdown-menu">
+        <a class="dropdown-item" href="<?= $rool_url ?>javaScript/Guide/intro.php">Introduction</a> 
+        <a class="dropdown-item" href="<?= $rool_url ?>javaScript/Guide/Grammar_and_types.php">Grammar and types</a> 
+       
         </div>
       </li>
 

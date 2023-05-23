@@ -1,7 +1,7 @@
 #scroll-to-top-btn-box {
   position: fixed;
   top: 211px;
-  left: 413px;
+  left: 55px;
 }
 
 #scroll-to-top-btn {
@@ -9,4 +9,19 @@
   padding: 10px;
   font-size: 2rem;
   border: orangered;
+  background: #e12c0f !important;
 }
+
+/* #sidebar_links{
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+#sidebar_links li a{
+  display: inline-block;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  background-color: #ddd;
+ width: 100%;
+ text-decoration: none;
+} */
