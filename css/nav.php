@@ -9,7 +9,7 @@
     <ul class="mr-auto navbar-nav">
 
     <li class="nav-item active">
-        <a class="nav-link" href="basics.php">Basic</a>
+        <a class="nav-link" href="<?= $rool_url ?>css/basics.php">Basic</a>
       </li>
 
       <li class="nav-item dropdown">
@@ -17,10 +17,11 @@
        CSS first steps
        </a>
        <div class="dropdown-menu">
-         <a class="dropdown-item" href="<?= $rool_url ?>css/CSS_first_steps/a.php">What is CSS? </a>
-         <a class="dropdown-item" href="<?= $rool_url ?>css/CSS_first_steps/a.php">Getting started with CSS </a>
+         <a class="dropdown-item" href="<?= $rool_url ?>css/CSS_first_steps/intro.php">Intro </a>
+         <a class="dropdown-item" href="<?= $rool_url ?>css/CSS_first_steps/what-is-css.php">What is CSS? </a>
+         <a class="dropdown-item" href="<?= $rool_url ?>css/CSS_first_steps/Getting-started-with-CSS.php">Getting started with CSS </a>
          <a class="dropdown-item" href="<?= $rool_url ?>css/CSS_first_steps/a.php">How CSS is structured </a>
-         <a class="dropdown-item" href="<?= $rool_url ?>css/CSS_first_steps/a.php">How CSS works </a>
+         <a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works" target="_blank">How CSS works </a>
          <a class="dropdown-item" href="<?= $rool_url ?>css/CSS_first_steps/a.php">Styling a biography page </a>
       
          </div>

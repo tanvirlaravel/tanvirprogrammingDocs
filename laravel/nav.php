@@ -63,8 +63,9 @@
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="<?= $rool_url ?>laravel/Database/GettingStarted.php">Getting Started</a>
-        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Database/Migrations.php">Migrations</a>
-        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Database/defination.php">Defination</a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Database/QueryBuilder.php">Query Builder</a>
+        <a class="dropdown-item" href="<?= $rool_url ?>laravel/Database/migrations/index.php">Migrations</a>
+       
       </div>
     </li>
 

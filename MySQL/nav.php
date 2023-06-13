@@ -7,9 +7,34 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="mr-auto navbar-nav">
-    <li class="nav-item active">
-        <a class="nav-link" href="orm.php">ORM</a>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="<?= $rool_url ?>MySQL/intro.php">Intro</a>
       </li> 
+
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        Numeric data
+        </a>
+        <div class="dropdown-menu">          
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/integer.php">Integer</a> 
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/TINYINT.php">TINYINT</a>         
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/SMALLINT.php">SMALLINT</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/MEDIUMINT.php">MEDIUMINT</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/INT.php">INT</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/BIGINT.php">BIGINT</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/DECIMAL.php">DECIMAL</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/FLOAT.php">FLOAT</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/DOUBLE.php">DOUBLE</a>
+           <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/BOOLEAN.php">BOOLEAN</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/numeric/BIT.php">BIT</a>
+        </div>
+      </li>
+
+
+      <li class="nav-item active">
+        <a class="nav-link" href="orm.php">ORM</a>
+      </li>
 
       <li class="nav-item active">
         <a class="nav-link" href="mysql-data-types.php">ddd</a>
@@ -39,7 +64,7 @@
         data types
         </a>
         <div class="dropdown-menu">          
-          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/dataTypes/">Factories</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>MySQL/dataTypes/intro.php">Introduction</a>
         </div>
       </li>
 
@@ -76,7 +101,7 @@
         </div>
       </li> -->
       <li class="nav-item active">
-        <a class="nav-link" href="<?= $rool_url ?>MySQL/defination.php">Defination</a>
+        <a class="nav-link" href="<?= $rool_url ?>MySQL/defination/defination.php">Defination</a>
 
       </li>
     </ul>

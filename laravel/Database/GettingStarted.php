@@ -31,30 +31,53 @@
            <h3>Configuration</h3>
            <div>
              <code>config/database.php </code>
+             <p> In this file, you may define all of your database connections, as well as specify which connection should be used by default.</p>
+
+             <h5>SQLite Configuration</h5>
+             <p>Docs</p>
+
+             <h5>Microsoft SQL Server Configuration</h5>
+             <p>Docs</p>
+
+             <h5>Configuration Using URLs</h5>
+             <p>Docs</p>
+
+             <h5>Read & Write Connections</h5>
+             <p>Docs</p>
+
+             
            </div>
+           <hr>
+           <hr>
 
 
             <h3>Running SQL Queries</h3>
            <div>
-           <p>Once you have configured your database connection, you may run queries using the <code>DB</code> facade. The DB facade provides methods for each type of query: select, update, insert, delete, and statement.</p>
-           <pre>
-           use Illuminate\Support\Facades\DB;
-
-           DB::select('select * from users where active = ?', [1]);
-
-           DB::update(
-                'update users set votes = 100 where name = ?',
-                ['Anita']
-            );
-
-            DB::delete('delete from users');
-            
-           </pre>
+           <p>Once you have configured your database connection, you may run queries using the <code>DB</code> facade. The DB facade provides methods for each type of query: <code>select, update, insert, delete,</code> and <code>   statement.</code></p>
+           
+           <h1>Works</h1>
           
            <hr>
            <hr>
 
+           <h3>Using Multiple Database Connections</h3>
+           <p>Later</p>
+           <hr>
+           <hr>
+
+           <h3>Listening For Query Events</h3>
+            <p>Later</p>
+           <hr>
+           <hr>
+
+           <h3>Monitoring Cumulative Query Time</h3>
+            <p>Later</p>
+           <hr>
+           <hr>
+           
+
            <h3>Database Transactions</h3>
+           <p>Later</p>
            <p>In the context of database management systems, a transaction is a unit of work that is performed against a database. Transactions are used to ensure that the database remains in a consistent state, even in the event of a system failure or other unexpected occurrences.</p>
            <p>A transaction consists of one or more SQL statements that are executed as a single unit. If any of the statements fail, the entire transaction is rolled back, which means that all of the changes made by the transaction are undone. If all of the statements in the transaction are successful, the transaction is committed, which means that the changes are made permanent in the database.</p>
            <p>Transactions are an important concept in database systems because they allow multiple operations to be grouped together and treated as a single unit of work. This makes it possible to ensure that the database remains in a consistent state, even if errors or failures occur during the execution of the transaction. Transactions also make it possible to roll back changes if needed, which can be useful for debugging or correcting mistakes.</p>
@@ -74,6 +97,7 @@
 
 
            <h3>Deadlocks</h3>
+           <p>Later</p>
            <p>A deadlock is a situation that can occur in a database management system when two or more transactions are waiting for each other to release locks on resources that they both need. As a result, each transaction is waiting for the other to complete, and neither can make progress. This creates a cycle of dependency that can cause the system to become stuck, or deadlocked.</p>
            <p>There are several ways to prevent or resolve deadlocks in a database system. One common approach is to use a lock timeout, which allows the system to automatically release locks after a certain amount of time has passed. Another approach is to use a deadlock detection algorithm, which can identify and resolve deadlocks by rolling back one of the transactions involved in the deadlock.</p>
            <p>It is also possible to design the database schema and the application code in such a way as to minimize the risk of deadlocks occurring. For example, by using a standardized order for acquiring locks on resources, or by using a technique known as lock escalation, which reduces the number of locks held by transactions.</p>
@@ -82,7 +106,13 @@
            <hr>
            <hr>
 
+           <h3>Connecting To The Database CLI</h3>
+           <p>Later</p>
+           <hr>
+           <hr>
+
            <h3>Inspecting Your Databases</h3>
+           <p>Later</p>
            <p>Using the db:show and db:table Artisan commands, you can get valuable insight into your database and its associated tables.</p>
            <pre>
            php artisan db:show

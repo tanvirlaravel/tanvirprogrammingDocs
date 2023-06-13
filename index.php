@@ -68,6 +68,10 @@
                  <h1><a href="react">React</a></h1>
             </div>
 
+            <div class="col-4">
+                 <h1><a href="Glossory">Glossory</a></h1>
+            </div>
+
 
            
         </div>

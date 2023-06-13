@@ -23,11 +23,7 @@
           <a class="dropdown-item" href="<?= $rool_url ?>javaScript/theory/window.php">Window (obj) </a> 
           <a class="dropdown-item" href="<?= $rool_url ?>javaScript/theory/Document.php">Document (obj) </a> 
           <a class="dropdown-item" href="<?= $rool_url ?>javaScript/theory/window_vs_document.php">window vs document</a> 
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/theory/DOM-Tree.php">DOM Tree</a> 
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/theory/node.php">Node</a> 
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/theory/NodeList.php">NodeList </a> 
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/theory/collection.php">collection </a> 
-          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/theory/nodelist-vs-collection.php">nodelist vs collection </a> 
+       
       
          
           
@@ -44,6 +40,24 @@
           <a class="dropdown-item" href="Proxy-Reflection.php">Proxy & Reflection</a>
           <a class="dropdown-item" href="JavaScript-Runtime.php">JavaScript Runtime</a>
           <a class="dropdown-item" href="Primitive-Wrapper-Types.php">Primitive Wrapper Types</a> -->
+        </div>
+      </li>
+
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        DOM
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/dom/into.php">Intro</a>          
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/dom/into.php">Virtual DOM</a>          
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/dom/DOM-Tree.php">DOM Tree</a>          
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/dom/node.php">node</a>          
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/dom/NodeList.php">NodeList</a>   
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/dom/collection.php">Collection</a>         
+          <a class="dropdown-item" href="<?= $rool_url ?>javaScript/dom/nodelist-vs-collection.php">Node vs Collection</a>          
+                  
+           
+         
         </div>
       </li>
 
