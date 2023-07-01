@@ -78,6 +78,12 @@
           <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/How-create-classes-objects.php">How to create classes and objects?
           <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/$this-keyword.php">$this keyword</a>
           <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Chaining_methods_properties.php">Chaining methods and properties</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Access_modifiers_public_vs_private.php">Access modifiers: public vs. private</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Magic_methods_and_constants.php">Magic methods and constants unveiled</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Namespaces_and_code_integration.php">Namespaces and code integration</a>
+
+
+          <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/coupling.php">Coupling</a>
              
          
         </div>

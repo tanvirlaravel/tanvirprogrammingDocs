@@ -17,14 +17,19 @@
 
             <h3>Introduction</h3>
             <div>
-                <p>The $this keyword indicates that we use the class’s own methods and properties, and allows us to have access to them within the class’s scope.</p> 
-                <p>The $this keyword indicates that we use the class’s own methods and properties, and allows us to have access to them within the class’s scop</p>
-                
-              
-
-            <hr>
-            <hr>
+                <p>The $this keyword indicates that we use the class’s own methods and properties, and allows us to have access to them within the class’s scope.</p>           
             </div>
+            <hr>
+            <hr>
+
+            <!-- <h3></h3>
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <hr>
+            <hr> -->
 
            
 

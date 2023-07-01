@@ -11,7 +11,7 @@
             </ul>
            </div>
            <div class="col-8">
-           <h2 class="text-danger">Service Container</h2>
+           <h1 class="text-danger">Service Container</h1>
 
            <h3>php class dependencies</h3>
            <div>
@@ -42,8 +42,12 @@
              <p>Managing class dependencies is important because it helps to decouple your code and make it more maintainable. For example, if class A has a direct dependency on class B, then changing class B could potentially break class A. By using techniques such as dependency injection, you can make your code more flexible and easier to change.</p>
 
            </div>
+            <hr>
+            <hr>
+
 
            <h3>dependency injection</h3>
+           <div>
            <p>Dependency injection is a technique for managing class dependencies in which an object's dependencies are injected into the object, rather than being hardcoded into the object's code. This makes the object more flexible and easier to change, because you can use different implementations of the dependencies without changing the object's code.</p>
            <pre>
              class A {
@@ -64,6 +68,7 @@
             $a = new A($b);
            </pre>
            <p>Dependency injection is a powerful tool for managing class dependencies and making your code more flexible and maintainable.</p>
+            </div>
            <hr>
            <hr>
 

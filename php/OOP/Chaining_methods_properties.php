@@ -17,78 +17,113 @@
 
             <h3>Introduction</h3>
             <div>
-                <p>The $this keyword indicates that we use the class’s own methods and properties, and allows us to have access to them within the class’s scope.</p> 
-                <p>The $this keyword indicates that we use the class’s own methods and properties, and allows us to have access to them within the class’s scop</p>
-                
-                <ol>
-                    <li>Set Properties</li>
-                    <li>Get Properties</li>
-                    <li>Call Methods</li>
-                </ol>
+                <p>when a class’s methods return the $this keyword, they can be chained together to create much more streaming code</p>
+                <p>In order for us to be able to perform the chaining, the methods should return the object and, since we are inside the class, the methods should return the $this keyword</p>
+                <pre>
+                    
+        class Car {
+            public $tank;
 
-            <hr>
-            <hr>
+            // Add gallons of fuel to the tank when we fill it
+            public function fill($float)
+            {
+                $this-> tank += $float;
+                return $this;
+            }
+
+            // Subtract gallons of fuel from the tank as we ride the car
+            public function ride($float)
+            {
+                $miles = $float;
+                $gallons = $miles/50;
+                $this-> tank -= $gallons;
+                return $this;
+            }
+        }
+
+        // Create an object from the Car class
+        $bmw = new Car();
+
+        // Add 10 gallons of fuel, then ride 40 miles
+        // and get the number of gallons in the tank
+        $tank = $bmw -> fill(10) -> ride(40) -> tank;
+
+        // Print the results to the screen
+        echo "The number of gallons left in the tank: " . $tank . " gal.";
+
+                </pre>
             </div>
+            <hr>
+            <hr>
 
-            <h3>How to create classes?</h3>
+
+            <h3></h3>
             <div>
-                <p>In order to create a class, we group the code that handles a certain topic into one place. For example, we can group all of the code that handles the users of a blog into one class, all of the code that is involved with the publication of the posts in the blog into a second class, and all the code that is devoted to comments into a third class.</p> 
-            <hr>
-            <hr>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
+            <hr>
+            <hr>
 
 
-            <h3>How to add properties to a class?</h3>
+            <h3></h3>
             <div>
-                <p>We call properties to the variables inside a class. Properties can accept values like strings, integers, and booleans (true/false values), like any other variable</p>
-               
-            <hr>
-            <hr>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
+            <hr>
+            <hr>
 
 
-            <h3>Objects, what are they good for?</h3>
+            <h3></h3>
             <div>
-                <p>While in the procedural style of programming, all of the functions and variables sit together in the global scope in a way that allows their use just by calling their name, the use of classes makes anything inside the classes hidden from the global scope. That’s because the code inside the classes is encapsulated within the class scope, outside the reach of the global scope. So, we need a way to allow the code from the global scope to use the code within the class, and we do this by creating objects from a class.</p> 
-                <img src="./../img/class_and_obj.png" alt="">
-            <hr>
-            <hr>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
+            <hr>
+            <hr>
 
-            <h3>How to create classes?</h3>
-            <div>
-               
-            <hr>
-            <hr>
-            </div>
 
-            <h3>How to create classes?</h3>
+            <h3></h3>
             <div>
-               
-            <hr>
-            <hr>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
+            <hr>
+            <hr>
 
-            <h3>How to create classes?</h3>
-            <div>
-               
-            <hr>
-            <hr>
-            </div>
 
-            <h3>How to create classes?</h3>
+            <h3></h3>
             <div>
-               
-            <hr>
-            <hr>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
+            <hr>
+            <hr>
 
-            <h3>How to create classes?</h3>
+
+            <h3></h3>
             <div>
-               
-            <hr>
-            <hr>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
+            <hr>
+            <hr>
+
+            <h3></h3>
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <hr>
+            <hr>
 
         </div> <!-- col-8-end -->
     

@@ -13,7 +13,7 @@
        <div class="col-8">
               <h1>Introduction</h1>
               <p>In SQL, various data types are available to define the type of data that can be stored in database tables. The specific set of data types may vary between different database systems, but here are some commonly used SQL data types:</p>
-
+              <p><a href="https://www.dofactory.com/sql/data-types" target="_blank">Docs</a></p>
               <ol>
                      <li>Numeric Data Types:</li>
                      <ul>

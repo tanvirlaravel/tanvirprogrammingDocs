@@ -30,6 +30,9 @@
         <a class="nav-link" href="<?= $rool_url ?>Glossory/n.php">N</a>
       </li>
       <li class="nav-item active">
+        <a class="nav-link" href="<?= $rool_url ?>Glossory/p.php">P</a>
+      </li>
+      <li class="nav-item active">
         <a class="nav-link" href="<?= $rool_url ?>Glossory/z.php">Z</a>
       </li>
     </ul>

@@ -13,6 +13,13 @@
            <div class="col-8">
            <h2 class="text-danger">Request Lifecycle</h2>
 
+           <h3>First Steps</h3>
+           <div>
+            <p>The entry point for all requests to a Laravel application is the <code>public/index.php</code> file. All requests are directed to this file by your web server (Apache / Nginx) configuration</p>
+
+            <p>The index.php file loads the Composer generated autoloader definition, and then retrieves an instance of the Laravel application from <code>bootstrap/app.php</code>. The first action taken by Laravel itself is to create an instance of the application / <code>service container</code>.</p>
+           </div>
+
 
            <h3 class="text-success">Introduction</h3>
           <div>
