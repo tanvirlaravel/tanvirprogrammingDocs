@@ -57,73 +57,17 @@
             <hr>
 
 
-            <h3></h3>
+            <!-- <h3></h3>
             <div>
                 <p></p>
                 <p></p>
                 <p></p>
             </div>
             <hr>
-            <hr>
+            <hr> -->
 
 
-            <h3></h3>
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <hr>
-            <hr>
-
-
-            <h3></h3>
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <hr>
-            <hr>
-
-
-            <h3></h3>
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <hr>
-            <hr>
-
-
-            <h3></h3>
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <hr>
-            <hr>
-
-
-            <h3></h3>
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <hr>
-            <hr>
-
-            <h3></h3>
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <hr>
-            <hr>
+           
 
         </div> <!-- col-8-end -->
     

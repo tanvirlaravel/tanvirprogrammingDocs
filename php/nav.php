@@ -8,9 +8,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="mr-auto navbar-nav">
 
-       <li class="nav-item active">
-        <a class="nav-link" href="Basic-syntax.php">Basic syntax</a>
-       </li>
+      
 
        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -24,17 +22,7 @@
           <a class="dropdown-item" href="constant.php">Predefined Variables</a>           
          
         </div>
-      </li>
-     
-    
-     
-       <li class="nav-item active">
-        <a class="nav-link" href="Expressions.php">Expressions </a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Operators.php">Operators</a>
-       </li>
-             
+      </li>          
 
        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -64,9 +52,9 @@
         </div>
       </li>
 
-      <li class="nav-item active">
+      <!-- <li class="nav-item active">
         <a class="nav-link" href="Functions.php">Functions </a>
-       </li>
+       </li> -->
 
 
        <li class="nav-item dropdown">
@@ -80,6 +68,7 @@
           <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Chaining_methods_properties.php">Chaining methods and properties</a>
           <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Access_modifiers_public_vs_private.php">Access modifiers: public vs. private</a>
           <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Magic_methods_and_constants.php">Magic methods and constants unveiled</a>
+          <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Inheritance.php">Inheritance</a>
           <a class="dropdown-item" href="<?= $rool_url ?>php/OOP/Namespaces_and_code_integration.php">Namespaces and code integration</a>
 
 
@@ -89,96 +78,20 @@
         </div>
       </li>
        
-      
-     
-    </ul>
-   
-  </div>
-</nav>
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">  
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="mr-auto navbar-nav">      
-      
-       <li class="nav-item active">
-        <a class="nav-link" href="Namespaces.php">Namespaces  </a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Enumerations.php">Enumerations  </a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Errors.php">Errors  </a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Exceptions </a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Fibers </a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Generators </a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Attributes </a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">References Explained</a>
-       </li>
-      
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Predefined Exceptions</a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Predefined Interfaces and Classes </a>
-       </li>
-       
-     
-    </ul>
-   
-  </div>
-</nav>
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">  
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="mr-auto navbar-nav">      
-      
-      
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Predefined Attributes</a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Context options and parameters</a>
-       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="Exceptions.php">Supported Protocols and Wrappers </a>
-       </li>
-
          <li class="nav-item active">
-        <a class="nav-link" href="image.php">File Uploading</a>
-      </li> 
-
-     
-      
+        <a class="nav-link" href="<?= $rool_url ?>php/session.php">Session </a>
+       </li>
 
        <li class="nav-item active">
-        <a class="nav-link" href="array.php">Array</a>
-      </li> 
-
-       <li class="nav-item active">
-        <a class="nav-link" href="object.php">Object</a>
-       </li> 
+        <a class="nav-link" href="<?= $rool_url ?>php/cookie.php">Cookie </a>
+       </li>
      
+     
+       
     </ul>
    
   </div>
 </nav>
+
+
 

@@ -24,7 +24,7 @@
             <hr>
 
 
-            <h3>The __construct() magic method</h3>
+            <h3>The __construct() default value</h3>
             <div>
                <pre>
 
